@@ -1,7 +1,7 @@
 {% extends 'base.html'%}
 
 {% block head %}
-<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/card.css')}}">
 {% endblock %}
 
 {% block body %}
@@ -26,24 +26,30 @@
       </ul>
     </div>
   </nav>
-  <div class="menu-card">
-    <div class="search-space">
+<h4 class="top-thing">Your order is being processed</h4>
+
+  <div class="summary-card">
+    <div class="thanks text-center">
+    <h4 class="one">Thank you for using The Night Shift</h4>
+    <br>
+    <h6>Your order id is</h6>
+    <h1 class="big">20</h1>
+    <br>  
+    <h6>Estimated time of arrival is 10 minutes</h6>
     </div>
-     <div class="invoice-message">
-             <h1 class="invoice-head">Thank you for using The Night Shift </h1>
-         <div class="invoice-body">
-            <h4>Please review your cart before you proceed to checkout</h4>
-         </div>
-         <hr>
-         <!-- <div class="container"> -->
-         <div class="row">
-          <h6>Food goes here</h6>
-          <h6>Quantitys</h6>
-          <h6>Price</h6>
-          </div>
-         <!-- </div> -->
-     </div>
+    <div class="Done">
+      <h6 class="done" style="text-align: center; vertical-align: middle;">Order Again</h6 >
     </div>
+    
+    <!-- <button class="again">Lets do it again!</button> -->
+    <div class="inner-summary-card">
+      <!-- <div class="Total">
+        <h4 class="total">your total:</h4>
+        <h1 class="total-no">Ghc 30.00</h1>
+      </div> -->
+      <h4 class="comment" style="margin:auto;">Leave us a comment</h4>
+    </div>
+  </div>
 
 
 {% endblock %}
